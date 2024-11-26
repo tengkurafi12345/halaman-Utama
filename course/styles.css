@@ -1,0 +1,224 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Warna latar belakang yang lembut */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4800ac;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.navbar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Course Container */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Jarak antar elemen */
+    max-width: 1200px; /* Batas maksimal lebar kontainer */
+    margin: 0 auto; /* Agar kontainer berada di tengah layar */
+    padding: 20px; /* Memberikan jarak antara kontainer dengan tepi layar */
+}
+
+.course-package {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-package:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-package img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.course-package h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course-package p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.course-package button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-package button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #3a008b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #e21818;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1024px) {
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar h1 {
+        font-size: 1.8em;
+    }
+
+    .navbar nav ul li a {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .navbar h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .navbar nav ul li {
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .course-package {
+        width: 90%;
+    }
+
+    .course-package button {
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}

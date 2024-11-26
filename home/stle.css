@@ -1,0 +1,123 @@
+/* CSS dasar untuk tampilan */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem;
+    background-color: #29007a; /* Warna ungu untuk navbar */
+}
+
+/* Menyusun Menu Navbar agar berada di tengah */
+.navbar-collapse {
+    justify-content: center;
+}
+
+/* Section Umum */
+section {
+    padding: 60px 0;
+}
+
+/* Course dan Testimonial */
+.course, .testimonial {
+    background-color: rgb(199, 199, 199);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1.5px solid black;
+    margin-bottom: 30px;
+}
+
+/* CSS for Testimonial Section */
+#testimonials .testimonial img {
+    width: 100px; /* Atur ukuran gambar */
+    height: 100px; /* Atur ukuran gambar */
+    object-fit: cover; /* Menyesuaikan gambar di dalam lingkaran */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    border: 2px solid #6c63ff; /* Menambahkan border (opsional, sesuaikan warna dengan tema Anda) */
+    margin-bottom: 15px; /* Memberi jarak antara gambar dan teks */
+}
+
+
+.course img, .testimonial img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Styling Tombol */
+button {
+    background-color: #080016; /* Warna ungu untuk tombol */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a2e8e; /* Warna ungu lebih gelap saat hover */
+}
+
+/* Map */
+iframe {
+    border-radius: 8px;
+    border: 1.5px solid black;
+}
+
+/* Footer */
+footer {
+    background-color: #380049; /* Warna ungu untuk footer */
+    color: white;
+}
+
+footer .social-media a {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ffffff; /* Warna kuning saat hover */
+}
+
+.text-warning {
+    color: #f7c800; /* Warna kuning untuk teks */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .course, .testimonial {
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+
+    /* Menyusun tombol Sign Up dan Log In pada perangkat kecil */
+    .navbar-nav.ms-auto {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
