@@ -16,7 +16,7 @@ body {
 /* Navbar */
 .navbar {
     background-color: #4800ac;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     text-align: center;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .navbar nav ul li a {
-    color: #ff0000;
+    color: #e6e6e6;
     text-decoration: none;
     font-weight: 500;
     font-size: 1.2em;
@@ -111,7 +111,7 @@ p {
     padding: 10px 20px;
     font-size: 14px;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #6b0054;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -119,7 +119,7 @@ p {
 }
 
 .course-package button:hover {
-    background-color: #45a049;
+    background-color: #db00a4;
 }
 
 /* Footer */
